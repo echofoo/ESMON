@@ -516,15 +516,18 @@ The following pictures are some of the panels in the **Lustre Statistics** dashb
 
 - The **I/O Throughput per Job** panel ([Figure 43](#figure-43-io-throughput-per-job-panel)) shows the metric information of the I/O throughput per job in the Lustre filesystem. It includes average, max, and current values. As shown in the figure, for the job with JOBID “dd.0”, the average I/O throughput is 7.68MBps, the max value is 65.16MBps, and the current I/O throughput is 29.37MBps.
 
-  ###### Figure 43: I/O Throughput per Job Panel![I/O Throughput Per Job Panel of Server Statistics Dashboard](pic/io_throughput_per_job.jpg)
+     ###### Figure 43: I/O Throughput per Job Panel
+     ![I/O Throughput Per Job Panel of Server Statistics Dashboard](pic/io_throughput_per_job.jpg)
 
 - The **Write Throughput per Job** panel ([Figure 44](#figure-44-write-throughput-per-job-panel)) shows the metric information of the write throughput per job in the Lustre filesystem. It includes average, max, and current values. As shown in the figure, for the job with JOBID “dd.0”, the average I/O throughput is 7.68MBps, the max value is 64.16MBps, and the current I/O throughput is 29.37MBps.
 
-  ###### Figure 44: Write Throughput per Job Panel![Write Throughput Per Job Panel of Server Statistics Dashboard](pic/write_throughput_per_job.jpg)
+     ###### Figure 44: Write Throughput per Job Panel
+     ![Write Throughput Per Job Panel of Server Statistics Dashboard](pic/write_throughput_per_job.jpg)
 
 - The **Read Throughput per Job** panel ([Figure 45](#figure-45-read-throughput-per-job-panel)) shows the metric information of the read throughput per job in the Lustre filesystem. It includes average, max, and current values. As shown in the figure, for the job with JOBID “dd.0”, the average I/O throughput is 2.56MBps, the max value is 59.79MBps, and the current I/O throughput is 12.75MBps.
 
-  ###### Figure 45: Read Throughput per Job Panel![Read Throughput Per Job Panel of Server Statistics Dashboard](pic/read_throughput_per_job.jpg)
+     ###### Figure 45: Read Throughput per Job Panel
+     ![Read Throughput Per Job Panel of Server Statistics Dashboard](pic/read_throughput_per_job.jpg)
 
  - The **Metadata Performance per Job** panel ([Figure 46](#figure-46-metadata-performance-per-job-panel)) shows the metric information of the metadata performance per job in the Lustre filesystem. It includes average, max, and current values, and the unit is OPS (Operations per Second). As shown in the figure, for the job with JOBID “rm.0”, the average metadata performance is 94.42 ops, max value is 1.19K ops, and the current performance is 7.00 ops.
 
