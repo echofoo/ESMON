@@ -318,7 +318,7 @@ Lustre 仪表盘（[图 4](#图4lustre仪表盘 )）显示了 Lustre 文件系�
    ![Lustre Used Capacity in Total Panel of Lustre Statistics Dashboard](pic/lustre_statistics_used_capacity.jpg)
 
 
-- **每个OST剩余容量**面板([图7](#图7-lustre文件系统每个OST剩余容量面板)) 显示了Lustre文件系统每个OST剩余容量大小。如图所示，OST0002剩余容量为946.47MB， OST0007剩余容量为3.59GB，其他OST剩余容量都为4.09GB。点击**Current**，可以根据当前容量进行从小到大（或从大到小）排序。 
+- **每个OST剩余容量**面板([图7](#图7-lustre文件系统每个ost剩余容量面板)) 显示了Lustre文件系统每个OST剩余容量大小。如图所示，OST0002剩余容量为946.47MB， OST0007剩余容量为3.59GB，其他OST剩余容量都为4.09GB。点击**Current**，可以根据当前容量进行从小到大（或从大到小）排序。 
 
   ###### 图7: Lustre文件系统每个OST剩余容量面板
 
@@ -355,7 +355,7 @@ Lustre 仪表盘（[图 4](#图4lustre仪表盘 )）显示了 Lustre 文件系�
 
    ![Free Inode Number Panel of Server Statistics Dashboard](pic/used_inode_number.jpg)
 
-- 每个MDT剩余索引节点数目面板([图13](#图13-每个MDT剩余索引节点数目面板)) 显示了Lustre文件系统每个MDT剩余索引节点数目。如图所示，MDT0000剩余索引节点的数目为1.72Mil；系统其他各个MDT空闲的索引节点数目为2.62 Mil。点击Current，可以根据当前索引节点数目进行从小到大（或从大到小）排序。
+- 每个MDT剩余索引节点数目面板([图13](#图13-每个mdt剩余索引节点数目面板)) 显示了Lustre文件系统每个MDT剩余索引节点数目。如图所示，MDT0000剩余索引节点的数目为1.72Mil；系统其他各个MDT空闲的索引节点数目为2.62 Mil。点击Current，可以根据当前索引节点数目进行从小到大（或从大到小）排序。
 
   ###### 图13: 每个MDT剩余索引节点数目面板
 
@@ -957,7 +957,7 @@ LDLM Callback服务自适应超时值面板（[图105](#图105-ldlm-callback服�
 
 ### SFA 物理磁盘仪表盘
 
-**SFA物理磁盘仪**表盘**（**[图117](#图117-sfa物理磁盘仪表盘)）显示了SFA物理磁盘的相关信息。
+**SFA物理磁盘仪**表盘（[图117](#图117-sfa物理磁盘仪表盘)）显示了SFA物理磁盘的相关信息。
 
 ###### 图117: SFA物理磁盘仪表盘
 
@@ -970,7 +970,7 @@ LDLM Callback服务自适应超时值面板（[图105](#图105-ldlm-callback服�
 - **I/O** **吞吐率**面板（[图118](#图118io-吞吐率面板)）显示出该物理磁盘的I/O吞吐率。
 
   ###### 图118：I/O 吞吐率面板
- ![I/O Performance Panel of SFA Physical Disk Dashboard](pic/sfa_physical_disk/io_performance.jpg)
+   ![I/O Performance Panel of SFA Physical Disk Dashboard](pic/sfa_physical_disk/io_performance.jpg)
 
 - **IOPS**面板（[图119](#图119iops面板)）显示出该物理磁盘每秒I/O操作数目。
 
@@ -987,8 +987,7 @@ LDLM Callback服务自适应超时值面板（[图105](#图105-ldlm-callback服�
 -  **写数据吞吐率**面板（[图121](#图121写数据吞吐率面板)）显示出各控制器中，该物理硬盘的写入吞吐率。
 
   ###### 图121：写数据吞吐率面板
-
-  ![Write Performance Panel of SFA Physical Disk Dashboard](pic/sfa_physical_disk/write_performance.jpg)
+   ![Write Performance Panel of SFA Physical Disk Dashboard](pic/sfa_physical_disk/write_performance.jpg)
 
 - **写数据的I/O大小样品采样数目**面板（[图122](#图122写数据的io大小样品采样数目面板)）显示出该物理磁盘上每种I/O大小的采样数目。
 
