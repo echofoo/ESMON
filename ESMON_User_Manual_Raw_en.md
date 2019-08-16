@@ -736,7 +736,7 @@ Below you will find description of some of the panels in the **Lustre OSS Statis
   
 - The **Number of Active I/O Requests** Panel ([Figure 84](#figure-84-number-of-active-io-requests-panel)) shows the maximum and minimum number of active I/O requests varying on time on OSS. Active requests are the requests that is being actively handled by this OSS, not including the requests that are waiting in the queue. If the number of active requests is smaller than PTLRPC thread number minus two (one for incoming  request handling and the other for incoming high priority request handling), it generally means the thread number should be enough. The value shown in the left graph blew is the maximum number during the last collect interval. The value shown in the right graph blew is the minimum number during the last collect interval. 
 
-###### Figure 84: Number of Active I/O Requests Panel
+  ###### Figure 84: Number of Active I/O Requests Panel
   ![Number Of Active I/O Request](pic/lustre_oss/number_of_active_io_requests.jpg) 
   
 - The Number of Incoming I/O Requests Panel ([Figure 85](#figure-85-number-of-incoming-io-requests-panel)) shows the maximum and minimum number of incoming I/O requests varying on time on OSS.  Incoming requests are the requests that waiting on preprocessing. A request is not incoming request any more when its proprocessing begins. And after preprocessing, the requests will be put into processing queue.  The value shown in the left graph blew is the maximum number of incoming I/O requests during the last collect interval; The value shown in the right graph blew is the minimum number of incoming I/O requests during the last collect interval. 
@@ -821,7 +821,7 @@ Below you will find description of some of the panels in the **Lustre OSS Statis
 - The Number of Available LDLM Canceld Request buffers Panel ([Figure 101](#figure-101-number-of-available-ldlm-canceld-request-buffers-panel)) shows the maximum and minimum number of available LDLM Canceld request buffers varying on time on OSS. When a request arrives, one request buffer will be used. When number of available request buffers is under low water, more buffers are needed to avoid performance bottleneck. The value shown in the left graph blew is the maximum number during the last collect interval;  The value shown in the right graph blew is the minimum number during the last collect interval.
 
   ###### Figure 101: Number of Available LDLM Canceld Request Buffers Panel
-![Number of Available LDLM canceld Request Buffers](pic/lustre_oss/number_of_available_ldlm_canceld_request_buffers.jpg)
+  ![Number of Available LDLM canceld Request Buffers](pic/lustre_oss/number_of_available_ldlm_canceld_request_buffers.jpg)
   
 - The **Number of Active LDLM Callback** **Requests** Panel ([Figure 102](#figure-102-number-of-active-ldlm-callback-requests-panel)) shows the maximum and minimum number of active LDLM Callback requests varying on time on OSS. Active requests are the requests that is being actively handled by this OSS, not including the requests that are waiting in the queue. If the number of active requests is smaller than PTLRPC thread number minus two (one for incoming  request handling and the other for incoming high priority request handling), it generally means the thread number should be enough. The value shown in the left graph blew is the maximum number during the last collect interval. The value shown in the right graph blew is the minimum number during the last collect interval. 
 
@@ -980,27 +980,33 @@ Below you will find description of some of the panels in the **SFA Virtual Disk*
 
 - The I/O Performance panel ([Figure 125](#figure-125-io-performance-on-virtual-disk-panel)) in shows the I/O speed at a specific time.
 
-  ###### Figure 125: I/O Performance on Virtual Disk Panel![I/O Performance Panel of SFA Virtual Disk Dashboard](pic/sfa_virtual_disk/io_performance.jpg)
+  ###### Figure 125: I/O Performance on Virtual Disk Panel
+  ![I/O Performance Panel of SFA Virtual Disk Dashboard](pic/sfa_virtual_disk/io_performance.jpg)
   
 - The IOPS panel ([Figure 126](#figure-126-io-operations-per-second-on-virtual-disk-panel)) shows I/O operations per second on Virtual Disk.
 
-  ###### Figure 126: I/O Operations per Second on Virtual Disk Panel![IOPS Panel of SFA Virtual Disk Dashboard](pic/sfa_virtual_disk/iops.jpg)
+  ###### Figure 126: I/O Operations per Second on Virtual Disk Panel
+  ![IOPS Panel of SFA Virtual Disk Dashboard](pic/sfa_virtual_disk/iops.jpg)
   
 - The Bytes per I/O panel ([Figure 127](#figure-127-bytes-per-io-on-virtual-disk-panel)) shows I/O bytes per second on each controller.
 
-  ###### Figure 127: Bytes per I/O on Virtual Disk Panel![Bytes per I/O Panel of SFA Virtual Disk Dashboard](pic/sfa_virtual_disk/bytes_per_io.jpg)
+  ###### Figure 127: Bytes per I/O on Virtual Disk Panel
+  ![Bytes per I/O Panel of SFA Virtual Disk Dashboard](pic/sfa_virtual_disk/bytes_per_io.jpg)
   
 - The Write Performance panel ([Figure 128](#figure-128-write-performance-on-virtual-disk-panel)) shows write performance on each controller.
 
-###### Figure 128: Write Performance on Virtual Disk Panel![Write Performance Panel of SFA Virtual Disk Dashboard](pic/sfa_virtual_disk/write_performance.jpg)
+  ###### Figure 128: Write Performance on Virtual Disk Panel
+  ![Write Performance Panel of SFA Virtual Disk Dashboard](pic/sfa_virtual_disk/write_performance.jpg)
 
 - The Write I/O Size Samples panel ([Figure 129](#figure-129-write-io-size-samples-on-virtual-disk-panel)) shows the size distributions of write I/Os.
 
-  ###### Figure 129: Write I/O Size Samples on Virtual Disk Panel![Write I/O Size Panel of SFA Virtual Disk Dashboard](pic/sfa_virtual_disk/io_size.jpg)
+  ###### Figure 129: Write I/O Size Samples on Virtual Disk Panel
+  ![Write I/O Size Panel of SFA Virtual Disk Dashboard](pic/sfa_virtual_disk/io_size.jpg)
   
 - The Write Latency Samples panel ([Figure 130](#figure-130-write-latency-samples-on-virtual-disk-panel)) shows the latency distributions of write I/Os.
 
-  ###### Figure 130: Write Latency Samples on Virtual Disk Panel![Write Latency Samples Panel of SFA Virtual Disk Dashboard](pic/sfa_virtual_disk/write_latency.jpg)
+  ###### Figure 130: Write Latency Samples on Virtual Disk Panel
+  ![Write Latency Samples Panel of SFA Virtual Disk Dashboard](pic/sfa_virtual_disk/write_latency.jpg)
 
  
 
