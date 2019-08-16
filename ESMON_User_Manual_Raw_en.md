@@ -415,7 +415,8 @@ The following pictures are some of the panels in the **Lustre Statistics** dashb
 
 - The **Metadata Operation Rate per Client** panel ([Figure 23](#figure-23-metadata-operation-rate-per-client-panel)) shows the metric information of the metadata operation rate per client in the Lustre filesystem. The unit is OPS. The information includes the average, maximum, and current values.
 
-     ###### Figure 23: Metadata Operation Rate per Client Panel   ![Metadata Operation Rate per Client Panel of Server Statistics Dashboard](pic/metadata_operation_rate_per_client.jpg)
+     ###### Figure 23: Metadata Operation Rate per Client Panel   
+     ![Metadata Operation Rate per Client Panel of Server Statistics Dashboard](pic/metadata_operation_rate_per_client.jpg)
 
 - The **Metadata Operation Rate per Type** panel ([Figure 24](#figure-24-metadata-operation-rate-per-type-panel)) shows the metric information of the metadata operation rate per type in the Lustre filesystem. The unit is OPS. The information includes the average, maximum, and current values. The current test case used is the operations that remove all files in a directory.
 
