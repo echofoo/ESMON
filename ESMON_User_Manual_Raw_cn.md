@@ -988,7 +988,7 @@ LDLM Callback服务自适应超时值面板（[图105](#图105-ldlm-callback服�
 
   ###### 图121：写数据吞吐率面板
 
-​     ![Write Performance Panel of SFA Physical Disk Dashboard](pic/sfa_physical_disk/write_performance.jpg)
+  ![Write Performance Panel of SFA Physical Disk Dashboard](pic/sfa_physical_disk/write_performance.jpg)
 
 - **写数据的I/O大小样品采样数目**面板（[图122](#图122写数据的io大小样品采样数目面板)）显示出该物理磁盘上每种I/O大小的采样数目。
 
@@ -1000,7 +1000,7 @@ LDLM Callback服务自适应超时值面板（[图105](#图105-ldlm-callback服�
 
   ###### 图123：数据写入延迟样品采样数目面板
 
-​      ![Write Latency Samples Panel of SFA Physical Disk Dashboard](pic/sfa_physical_disk/write_latency.jpg)        
+  ![Write Latency Samples Panel of SFA Physical Disk Dashboard](pic/sfa_physical_disk/write_latency.jpg)        
 
 
 
@@ -1016,13 +1016,13 @@ LDLM Callback服务自适应超时值面板（[图105](#图105-ldlm-callback服�
 
   ###### 图125：I/O吞吐率面板
 
-​     ![I/O Performance Panel of SFA Virtual Disk Dashboard](pic/sfa_virtual_disk/io_performance.jpg)
+  ![I/O Performance Panel of SFA Virtual Disk Dashboard](pic/sfa_virtual_disk/io_performance.jpg)
 
 - IOPS面板（[图126](#图126iops面板)）显示出在不同的控制器上，该虚拟磁盘上的IOPS。
 
   ###### 图126：IOPS面板
 
-​     ![IOPS Panel of SFA Virtual Disk Dashboard](pic/sfa_virtual_disk/iops.jpg)
+  ![IOPS Panel of SFA Virtual Disk Dashboard](pic/sfa_virtual_disk/iops.jpg)
 
 - I/O大小面板（[图127](#图127bytes-per-io-on-virtual-disk-panel)）显示出各控制器上，该虚拟磁盘每次I/O的平均大小。
 
@@ -1040,12 +1040,11 @@ LDLM Callback服务自适应超时值面板（[图105](#图105-ldlm-callback服�
 
   ###### 图129：数据写入的I/O大小样品采集数目面板
 
-​      ![Write I/O Size Panel of SFA Virtual Disk Dashboard](pic/sfa_virtual_disk/io_size.jpg)
+  ![Write I/O Size Panel of SFA Virtual Disk Dashboard](pic/sfa_virtual_disk/io_size.jpg)
 
 -  数据写入的延迟样品采集数目面板（[图130](#图130数据写入的延迟样品采集数目面板)）显示出该SFA虚拟磁盘上，数据写入延迟的分布。
 
   ###### 图130：数据写入的延迟样品采集数目面板
-
    ![Write Latency Samples Panel of SFA Virtual Disk Dashboard](pic/sfa_virtual_disk/write_latency.jpg)
 
 ## 压力测试
