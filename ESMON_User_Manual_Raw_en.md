@@ -420,35 +420,43 @@ The following pictures are some of the panels in the **Lustre Statistics** dashb
 
 - The **Metadata Operation Rate per Type** panel ([Figure 24](#figure-24-metadata-operation-rate-per-type-panel)) shows the metric information of the metadata operation rate per type in the Lustre filesystem. The unit is OPS. The information includes the average, maximum, and current values. The current test case used is the operations that remove all files in a directory.
 
-  ###### Figure 24: Metadata Operation Rate per Type Panel![Metadata Operation Rate per Type Panel of Server Statistics Dashboard](pic/metadata_operation_rate_per_type.jpg)
+     ###### Figure 24: Metadata Operation Rate per Type Panel
+     ![Metadata Operation Rate per Type Panel of Server Statistics Dashboard](pic/metadata_operation_rate_per_type.jpg)
 
 - The **Write Bulk RPC Rate per Size** panel ([Figure 25](#figure-25-write-bulk-rpc-rate-per-size)) shows the write bulk RPC rate with different size in the Lustre Filesystem over time. The size of Lustre Bulk RPC could be a value between 4KiB and 16MiB. The figure below shows the information of write RPC Rate with different bulk size. The test case that generated the collected information is that two clients run ”dd if=/dev/zero of=/mnt/lustre/test1 bs=1M oflag=direct”, “dd if=/dev/zero of=/mnt/lustre/test2 bs=64k oflag=direct”, respectively.
 
-  ###### Figure 25: Write Bulk RPC Rate per Size![Write Bulk RPC Rate per Size Panel of Server Statistics Dashboard](pic/write_bulk_prc_rate_per_size.jpg)
+     ###### Figure 25: Write Bulk RPC Rate per Size
+     ![Write Bulk RPC Rate per Size Panel of Server Statistics Dashboard](pic/write_bulk_prc_rate_per_size.jpg)
 
 - The **Size Distribution of Write Bulk RPC** panel ([Figure 26](#figure-26-size-distribution-of-write-bulk-rpc-panel)) shows the ratio information of the write bulk RPC with different bulk size in the Lustre Filesystem. As shown in the figure, the percentage of total for the number of the write bulk RPC number with 256 pages is 100%.
 
-  ###### Figure 26: Size Distribution of Write Bulk RPC Panel![Size Distribution of Write Bulk RPC Panel of Server Statistics Dashboard](pic/size_distribution_of_write_bulk_rpc.jpg)
+     ###### Figure 26: Size Distribution of Write Bulk RPC Panel
+     ![Size Distribution of Write Bulk RPC Panel of Server Statistics Dashboard](pic/size_distribution_of_write_bulk_rpc.jpg)
 
 - The **Read Bulk RPC Rate per Size** panel ([Figure 27](#figure-27-read-bulk-rpc-rate-per-size-panel)) shows the read bulk RPC rate per size in the Lustre filesystem over time. The size of Lustre Bulk RPC could be a value between 4KiB and 16MiB. The figure below shows the read RPC rate with different bulk I/O size. The used test case to generate the collected information is that  two clients run “dd if=/mnt/lustre/test1 of=/dev/zero bs=1M iflag=direct” and “dd if=/mnt/lustre/test2 of=/dev/zero bs=64k iflag=direct”, respectively.
 
-  ###### Figure 27: Read Bulk RPC Rate per Size Panel![Read Bulk RPC Rate Panel of Server Statistics Dashboard](pic/read_bulk_rpc_rate.jpg)
+     ###### Figure 27: Read Bulk RPC Rate per Size Panel
+     ![Read Bulk RPC Rate Panel of Server Statistics Dashboard](pic/read_bulk_rpc_rate.jpg)
 
 - The **Size Distribution of Read Bulk RPC** panel ([Figure 28](#figure-28-size-distribution-of-read-bulk-rpc-panel)) shows the ratio information of read bulk RPC with different bulk I/O size in the Lustre filesystem. As shown in the figure, the total percentage of the read bulk RPC number with 256 pages is 100% where the current used test case is running”dd if=/mnt/lustre/file of=/dev/zero bs=1M”.
 
-  ###### Figure 28: Size Distribution of Read Bulk RPC Panel![Size Distribution of Read Bulk RPC Panel of Server Statistics Dashboard](pic/size_distribution_of_read_bulk_rpc.jpg)
+     ###### Figure 28: Size Distribution of Read Bulk RPC Panel
+     ![Size Distribution of Read Bulk RPC Panel of Server Statistics Dashboard](pic/size_distribution_of_read_bulk_rpc.jpg)
 
 - In each Lustre I/O, if the next page to be written or read in the I/O is not with the next offset, that page is a discontinuous page. There could be multiple discontinuous pages in an I/O. I/Os with less discontinuous pages are more friendly to OSTs, and underlying disk system will obtain much better performance. The **Distribution of Discontinuous Pages in Each Write I/O** panel ([Figure 29](#figure-29-distribution-of-discontinuous-pages-in-each-write-io-panel)) shows the ratio information of the discontinuous pages in each write I/O in the Lustre filesystem. As shown in the figure, the total percentage of discontinuous pages “0_pages” is 100%, which means all pages are continuous.
 
-  ###### Figure 29: Distribution of Discontinuous Pages in Each Write I/O Panel![Distribution of Discoutinuous Pages in Each Write I/O Panel of Server Statistics Dashboard](pic/distribution_of_discontinous_pages.jpg)
+  ###### Figure 29: Distribution of Discontinuous Pages in Each Write I/O Panel
+  ![Distribution of Discoutinuous Pages in Each Write I/O Panel of Server Statistics Dashboard](pic/distribution_of_discontinous_pages.jpg)
 
 - The **Distribution of Discontinuous Pages in Each Read I/O** panel ([Figure 30](#figure-30-distribution-of-discontinuous-pages-in-each-read-io-panel)) shows the ratio information of discontinuous pages in each read I/O in the Lustre filesystem. As shown in the figure, the percentage of discontinuous pages “0_pages” in each read I/O is 100%, which means all pages are continuous.
 
-  ###### Figure 30: Distribution of Discontinuous Pages in Each Read I/O Panel![Distribution of Discoutinuous Pages in Each Read I/O Panel of Server Statistics Dashboard](pic/distribution_of_discontinous_pages_in_read_io.jpg)
+  ###### Figure 30: Distribution of Discontinuous Pages in Each Read I/O Panel
+  ![Distribution of Discoutinuous Pages in Each Read I/O Panel of Server Statistics Dashboard](pic/distribution_of_discontinous_pages_in_read_io.jpg)
 
 - The **Distribution of Discontinuous Blocks** panel ([Figure 31](#figure-31-distribution-of-discontinuous-blocks-in-each-write-io-panel)) shows the ratio information of the discontinuous blocks in each write I/O in the Lustre filesystem. In each Lustre read/write I/O, the meaning of discontinuous blocks is similar to discontinuous pages. How many pages a block contains is determined by the underlying filesystem (ldiskfs).If an I/O has discontinuous blocks, there must exist discontinuous pages, but the opposite is not necessarily true. As shown in the figure, the percentage of write discontinuous blocks “0_blocks” in each write I/O is 100%, which means nearly all write I/O are continuous. 
 
-  ###### Figure 31: Distribution of Discontinuous Blocks in Each Write I/O Panel![Distribution of Discoutinuous Blocks in Each Write I/O](pic/distribution_of_discontinous_blocks_in_each_write_io.jpg)
+  ###### Figure 31: Distribution of Discontinuous Blocks in Each Write I/O Panel
+  ![Distribution of Discoutinuous Blocks in Each Write I/O](pic/distribution_of_discontinous_blocks_in_each_write_io.jpg)
 
 - The **Distribution of Discontinuous Blocks in Each Read I/O** panel ([Figure 32](#figure-32-distribution-of-discontinuous-blocks-in-each-read-io-panel)) shows the ratio information of discontinuous blocks in each read I/O in the Lustre filesystem. As shown in the figure, the percentage of discontinuous blocks “0_blocks” in each read I/O is 100%, and it means that none of the read I/Os is discontinous.
 
